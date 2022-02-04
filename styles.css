@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #faf6ed;
+}
+
+/* HEADER */
+
+.header {
+    margin-top: 30px;
+    background: linear-gradient(to right, #faf6ed 30%, #FB5 0)
+}
+
+.header-box {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #faf6ed;
+}
+
+.header-box ul {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    background: #FB5;
+}
+
+.header-box ul a {
+    display: inline-block;
+    padding: 10px;
+    font: 700 0.875rem/1 'IBM Plex Mono', monospace;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #222;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-box ul a:hover {
+    color: rgb(94, 94, 94);
+}
+
+.header-box li:last-child a::after {
+    content: "➜";
+    margin-left: 6px;
+    width: 16px;
+    height: inherit;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-box li:last-child a:hover:after {
+    transform: translateX(6px);
+    transition: 200ms;
+}
+
+/* ANIMAIS */
+
+.animais {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+
+.animais h1 {
+    font: 400 6rem/1 'Playfair Display SC', serif;
+    padding: 10px;
+}
+
+.animais-grid {
+    margin-left: 100px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.animais-img  {
+    height: 380px;
+    margin: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 290px;
+}
+
+.animais-img::-webkit-scrollbar {
+    width: 14px;
+}
+
+.animais-img::-webkit-scrollbar-track {
+    background: #faf6ed;
+}
+
+.animais-img::-webkit-scrollbar-thumb {
+    background: #FB5;
+    border-left: 4px solid #faf6ed;
+}
+
+.animais-img img {
+    width: 290px;
+}
+
+.animais-content {
+    margin: 10px;
+}
+
+.animais-text {
+    display: none;
+    animation: show 1s;
+}
+
+.animais-text.ativo {
+    display: block;
+}
+
+.animais-content h2 {
+    padding-bottom: 12px;
+    color: #e54;
+    font: 700 1rem/1 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+}
+
+.animais-content h2::before {
+    content: "";
+    background: #FB5;
+    margin-right: 12px;
+    width: 36px;
+    height: 8px;
+    display: inline-block;
+}
+
+.animais-content p {
+    font: 400 1rem/1.2 Helvetica , Arial;
+    padding-bottom: 12px;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* fAQ */
+
+.faq {
+    max-width: 900px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 400ms;
+    transform: translateX(-12px);
+}
+
+.faq.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.faq h1 {
+    font-family:'Playfair Display SC', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.faq-content {
+    margin-left: 100px;
+}
+
+.faq-content dl {
+    font-family: 'Helvetica', Arial;
+    margin-bottom: 24px;
+}
+.faq-content dt {
+    color: #e54;
+    font-weight: bold;
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 2;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.faq-content dt::before{
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 20px;
+    height: 10px;
+    background: #FB5;
+}
+
+.faq-content dd {
+    margin-left: 30px;
+    display: none;
+    animation: accordion-list 200ms;
+}
+
+.faq-content dd.ativo {
+    display: block;
+}
+
+@keyframes accordion-list {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+
+    }
+}
+
+/* CONTATO */
+
+.contato {
+    max-width: 900px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 400ms;
+    transform: translateX(-12px)
+}
+
+.contato.ativo {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.contato h1 {
+    font-family:'Playfair Display SC', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.contato-grid {
+    margin-left: 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: max-content 1fr;
+}
+
+.contato-img img {
+    width: 290px;
+    height: 380px;
+}
+
+.contato-content li,
+.contato-content li a {
+    margin-bottom: 4px;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.contato-content li a {
+    display: inline-block;
+}
+
+.contato-content li a:hover {
+    color: rgb(94, 94, 94);
+}
+
+.contato-content li::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 20px;
+    height: 10px;
+    background: #FB5;
+}
+
+/* FOOTER */
+
+.footer {
+    background: linear-gradient(to right, #faf6ed 30%, #FB5 0);
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer p {
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 100px;
+    background: #FB5;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+
+/* -------------- MEDIA ----------------- */
+
+/* HEADER */
+@media(max-width: 700px) {
+    .header {
+        margin-top: 0;
+    }
+    .header-box ul {
+        margin-left: 0;
+    }
+}
+
+/* ANIMAIS */
+@media(max-width: 700px) {
+    .animais h1 {
+        font-size: 3rem
+    }
+    .animais-grid {
+        margin-left: 0;
+    }
+    .animais-img  {
+        width: 90px;
+    }
+    .animais-img img {
+        width: 90px;
+    }
+}
+
+/* FAQ */
+@media(max-width: 700px) {
+    .faq h1 {
+        font-size: 3rem
+    }
+    .faq-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* CONTATO */
+@media(max-width: 700px) {
+    .contato h1 {
+        font-size: 3rem;
+    }
+    .contato-grid {
+        grid-template-columns: 1fr;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contato-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* FOOTER */
+@media(max-width: 700px) {
+    .footer p {
+        margin-left: 0;
+    }
+}
