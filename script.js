@@ -7,7 +7,7 @@ function trocarTexto() {
             texto.forEach(item => {
                 item.classList.remove('ativo')
             })
-            texto[index].classList.add('ativo')
+            texto[index].classList.add('ativo', texto[index].dataset.anime)
         })
     })
 }
@@ -75,5 +75,3 @@ mostrarConteudo()
 
 
 // -----------------------------------------------------------------------------------------------------
-
-

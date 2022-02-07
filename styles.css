@@ -115,10 +115,15 @@ body {
 
 .animais-text {
     display: none;
-    animation: show 1s;
 }
 
-.animais-text.ativo {
+.animais-text.ativo.show-Down {
+    animation: show-down 1s;
+    display: block;
+}
+
+.animais-text.ativo.show-Right {
+    animation: show-right 1s;
     display: block;
 }
 
@@ -146,12 +151,25 @@ body {
     padding-bottom: 12px;
 }
 
-@keyframes show {
+@keyframes show-right {
     from {
         opacity: 0;
+        transform: translateX(-15px);
     }
     to {
         opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
