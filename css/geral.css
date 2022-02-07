@@ -8,6 +8,10 @@ ul {
     list-style: none;
 }
 
+html {
+    position: relative;
+}
+
 body {
     background: #faf6ed;
 }
@@ -23,6 +27,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     background: #faf6ed;
+    position: relative;
 }
 
 .header-box ul {
