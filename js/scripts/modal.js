@@ -15,10 +15,4 @@ export default function modal() {
     modal.addEventListener('click', function(event) {
         event.target.classList.remove(modal.dataset.modal)
     })
-    document.addEventListener('keydown', function(event) {
-        const e = new KeyboardEvent("keydown", { key : "ESC"});
-        if(e) {
-            modal.classList.remove(modal.dataset.modal)
-        }
-    })
 }
