@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animais Fantásticos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Playfair+Display+SC:ital,wght@0,400;1,700&display=swap">
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,7 +19,7 @@
         <li><a href="#animais">animais</a></li>
         <li><a href="#faq">faq</a></li>
         <li><a href="#contato">contato</a></li>
-        <li><a href="https://www.origamid.com/">dev</a></li>
+        <li><a href="./">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -132,6 +133,23 @@
       <p>Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <section data-modal="mostrar-modal" class="modal-content">
+    <div class="modal">
+      <span data-modal-botao="fechar-modal">X</span>
+
+      <form class="form" action="./">
+        <label for="email">E-mail</label>
+        <input type="text" id="email">
+
+        <label for="pass">Senha</label>
+        <input type="password" id="pass">
+
+        <button type="submit">Entrar</button>
+      </form>
+
+    </div>
+  </section>
 </body>
 
 <script src="./js/scripts.js"></script>
