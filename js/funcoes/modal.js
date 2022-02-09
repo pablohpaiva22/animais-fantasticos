@@ -1,18 +1,20 @@
 export default function modal() {
-    const modal = document.querySelector('[data-modal="mostrar-modal"]')
+    const sectionModal = document.querySelector('[data-modal="mostrar-modal"]')
     const login = document.querySelector('.header-box ul li:last-child')
-    const botao = document.querySelector('[data-modal-botao="fechar-modal"')
+    const fecharX = document.querySelector('[data-modal-botao="fechar-modal"')
 
-    login.addEventListener('click', function(event) {
-        event.preventDefault()
-        modal.classList.add(modal.dataset.modal)
-    })
+    if(sectionModal && login && fecharX) {
+        login.addEventListener('click', function(event) {
+            event.preventDefault()
+            sectionModal.classList.add(sectionModal.dataset.modal)
+        })
 
-    botao.addEventListener('click', function() {
-        modal.classList.remove(modal.dataset.modal)
-    })
+        fecharX.addEventListener('click', function() {
+            sectionModal.classList.remove(sectionModal.dataset.modal)
+        })
 
-    modal.addEventListener('click', function(event) {
-        event.target.classList.remove(modal.dataset.modal)
-    })
+        sectionModal.addEventListener('click', function(event) {
+            event.target.classList.remove(sectionModal.dataset.modal)
+        })
+    }
 }
