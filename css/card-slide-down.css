@@ -2,28 +2,33 @@
     position: relative;
 }
 
-.card-slideDown {
+.card-dropDown {
     position: absolute;
     background-color: #e54;
     border: 2px solid #222;
     padding: 0 8px;
     display: none;
+    animation: dropDown 400ms;
+    z-index: 500;
 }
 
-.sobre:hover .card-slideDown {
+.card-dropDown.dropDown {
     display: block;
-    animation: slideDown 400ms;
 }
 
-.card-slideDown li {
+.sobre:hover .card-dropDown {
+    display: block;
+}
+
+.card-dropDown li {
     padding: 4px;
 }
 
-.card-slideDown li a:hover {
+.card-dropDown li a:hover {
     color: #fff;
 }
 
-@keyframes slideDown {
+@keyframes dropDown {
     from {
         opacity: 0;
         transform: translateY(12px);

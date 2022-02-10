@@ -54,7 +54,7 @@ body {
     color: rgb(94, 94, 94);
 }
 
-.header-box > li:last-child a::after {
+.header-box [data-login] a::after {
     content: "➜";
     margin-left: 6px;
     width: 16px;
