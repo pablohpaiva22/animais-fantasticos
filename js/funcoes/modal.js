@@ -1,6 +1,6 @@
 export default function modal() {
     const sectionModal = document.querySelector('[data-modal="mostrar-modal"]')
-    const login = document.querySelector('.header-box ul li:last-child')
+    const login = document.querySelector('[data-login]')
     const fecharX = document.querySelector('[data-modal-botao="fechar-modal"')
 
     if(sectionModal && login && fecharX) {
