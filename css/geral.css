@@ -26,17 +26,17 @@ body {
 .header-box {
     max-width: 900px;
     margin: 0 auto;
-    background: #faf6ed;
+    position: relative;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    background: #FB5;
     position: relative;
 }
 
 .header-box > ul {
-    padding: 10px;
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-    background: #FB5;
 }
 
 .header-box > ul a {
@@ -340,7 +340,7 @@ body {
     .header {
         margin-top: 0;
     }
-    .header-box ul {
+    .header-box {
         margin-left: 0;
     }
 }
