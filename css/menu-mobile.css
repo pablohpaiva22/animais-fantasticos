@@ -3,29 +3,6 @@
 }
 
 @media(max-width: 700px) {
-    .menu-mobile ul {
-        display: none;
-    }
-    .menu-mobile ul.active {
-        display: block;
-        width: 180px;
-        padding: 12px;
-        margin-left: 2px;
-        position: absolute;
-        background: #FB5;
-        top: 54px;
-        left: 0;
-        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-        z-index: 200;
-    }
-    .menu-mobile ul li {
-        background: #FB5;
-        margin-bottom: 8px;
-        box-shadow: 0 0 1px 0 #222;
-    }
-    .menu-mobile ul a {
-        padding: 16px
-    }    
     .menu-mobile button {
         display: flex;
         gap: 4px;
@@ -46,18 +23,41 @@
         display: inline-block;
         box-shadow: 0 4px #faf6ed, 0 -4px #faf6ed;
     }
-    .card-dropDown.card-mobile {
+    .menu-mobile ul {
+        display: none;
+    }
+    .menu-mobile ul.active {
+        position: absolute;
+        display: block;
+        width: 180px;
+        padding: 12px;
+        margin-left: 2px;
+        background: #FB5;
+        top: 54px;
+        left: 0;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+        z-index: 200;
+    }
+    .menu-mobile ul li {
+        background: #FB5;
+        margin-bottom: 8px;
+        box-shadow: 0 0 1px 0 #222;
+    }
+    .menu-mobile ul a {
+        padding: 16px
+    }    
+    .card-mobile {
         display: none;
         position: static;
         border: 1px solid #222;
 
     }
-    .card-dropDown.card-mobile li:first-child {
+    .card-mobile li:first-child {
         margin-top: 8px;
     }
-    .menu-mobile ul li ul li {
-        background: #E54;
-        box-shadow: none;
+    .card-mobile li {
+        background: #E54 !important;
+        box-shadow: none !important;
     }
 }
 
