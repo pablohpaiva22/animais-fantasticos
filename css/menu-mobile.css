@@ -7,13 +7,12 @@
         display: flex;
         gap: 4px;
         align-items: center;
-        background: #E54;
+        background: #FB5;
         padding: 16px;
         font-family: 'IBM Plex Mono', monospace;
         font-weight: bold;
         border-radius: 4px;
         cursor: pointer;
-        border: 1px solid #222;
     }
     .menu-mobile button::before {
         content: '';
@@ -41,6 +40,7 @@
     .menu-mobile ul li {
         background: #FB5;
         margin-bottom: 8px;
+        border-radius: 4px;
         box-shadow: 0 0 1px 0 #222;
     }
     .menu-mobile ul a {
