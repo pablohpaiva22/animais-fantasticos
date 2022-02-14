@@ -18,12 +18,12 @@
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
         z-index: 200;
     }
-    .menu-mobile ul.active li {
+    .menu-mobile ul li {
         background: #FB5;
         margin-bottom: 8px;
         box-shadow: 0 0 1px 0 #222;
     }
-    .menu-mobile ul.active a {
+    .menu-mobile ul a {
         padding: 16px
     }    
     .menu-mobile button {
@@ -55,7 +55,7 @@
     .card-dropDown.card-mobile li:first-child {
         margin-top: 8px;
     }
-    .menu-mobile ul.active li ul li {
+    .menu-mobile ul li ul li {
         background: #E54;
         box-shadow: none;
     }

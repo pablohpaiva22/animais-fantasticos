@@ -4,7 +4,7 @@ export default function menuDropDown() {
 
     function stopOnClick(event) {
         event.preventDefault()
-        card.classList.add('dropDown')
+        card.classList.toggle('dropDown')
         outsideClick(this, function() {
             card.classList.remove('dropDown')
         })
@@ -16,6 +16,7 @@ export default function menuDropDown() {
         function outsideClickCall(event) {
             if(!element.contains(event.target)) 
                 return callback()
+                html.removeEventListener('click', outsideClickCall)
         }
     }
 

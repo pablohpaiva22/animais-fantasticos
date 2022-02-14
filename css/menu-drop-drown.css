@@ -12,7 +12,7 @@
     z-index: 500;
 }
 
-.card-dropDown.dropDown {
+.card-dropDown.card-mobile.dropDown {
     display: block;
 }
 
