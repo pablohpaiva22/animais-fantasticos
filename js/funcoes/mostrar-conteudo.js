@@ -8,7 +8,7 @@ export default function mostrarConteudo() {
             if (alturaSecao < altura) {
                 item.classList.add('ativo')
             }
-            else {
+            else if(item.classList.contains('ativo')) {
                 item.classList.remove('ativo')
             }
         })

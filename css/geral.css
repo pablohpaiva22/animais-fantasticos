@@ -247,6 +247,55 @@ body {
     }
 }
 
+/* NUMEROS */
+
+.numeros {
+    max-width: 900px;
+    opacity: 0;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition: 400ms;
+    transform: translateX(-12px);
+}
+
+.numeros.ativo {
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.numeros h1 {
+    font: 400 6rem/1 'Playfair Display SC', serif;
+    padding: 10px;
+}
+
+.numeros-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px 100px;
+}
+
+.numeros-content h3 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    padding: 16px;
+}
+
+.numeros-content span {
+    font-family: 'IBM Plex Mono', monospace;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #E54;
+    padding: 0 16px;
+}
+
+
 /* CONTATO */
 
 .contato {
@@ -387,6 +436,21 @@ body {
         height: auto;
     }
 }
+
+/* NUMEROS */
+
+@media(max-width: 700px) {
+    .numeros h1 {
+        font-size: 3rem
+    }
+}
+
+@media(max-width: 550px) {
+    .numeros-container {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 /* FOOTER */
 @media(max-width: 700px) {

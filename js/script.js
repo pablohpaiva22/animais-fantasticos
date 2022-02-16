@@ -6,6 +6,7 @@ import modal from "./funcoes/modal.js"
 import tooltip from "./funcoes/tooltip.js"
 import dropDown from "./funcoes/drop-down.js"
 import menuMobile from "./funcoes/menu-mobile.js"
+import animaNumeros from "./funcoes/anima-numeros.js"
 
 trocarTexto()
 accordionList()
@@ -15,3 +16,4 @@ modal()
 tooltip()
 dropDown()
 menuMobile()
+animaNumeros()
