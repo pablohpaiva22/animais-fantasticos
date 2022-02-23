@@ -357,6 +357,27 @@ body {
     background: #FB5;
 }
 
+/* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
+
+[data-semana]::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(238, 4, 4);
+    border: 1px solid #000;
+    margin-left: 8px;
+    margin-bottom: 1px;
+}
+
+[data-semana].aberto::after {
+    background-color: rgb(22, 163, 22);
+}
+
+/* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
+
+
 /* FOOTER */
 
 .footer {

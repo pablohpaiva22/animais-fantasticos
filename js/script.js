@@ -7,6 +7,7 @@ import tooltip from "./funcoes/tooltip.js"
 import dropDown from "./funcoes/drop-down.js"
 import menuMobile from "./funcoes/menu-mobile.js"
 import animaNumeros from "./funcoes/anima-numeros.js"
+import horarioDeAtendimento from "./funcoes/atendimento.js"
 
 trocarTexto()
 accordionList()
@@ -17,3 +18,4 @@ tooltip()
 dropDown()
 menuMobile()
 animaNumeros()
+horarioDeAtendimento()
