@@ -375,7 +375,7 @@ body {
 }
 
 [data-semana].aberto::after {
-    background-color: rgb(22, 163, 22);
+    background-color: rgb(71, 204, 71);
 }
 
 /* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
