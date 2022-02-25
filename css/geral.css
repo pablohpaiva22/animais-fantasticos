@@ -20,23 +20,22 @@ body {
 
 .header {
     margin-top: 30px;
-    background: linear-gradient(to right, #faf6ed 30%, #FB5 0)
+    background: linear-gradient(to right, #faf6ed 40%, #fb5 0);
 }
 
 .header-box {
     max-width: 900px;
+    position: relative;
     margin: 0 auto;
-    position: relative;
-    padding: 10px;
     flex-wrap: wrap;
-    margin-left: 100px;
-    background: #FB5;
-    position: relative;
 }
 
 .header-box > ul {
     display: flex;
     gap: 10px;
+    background: #FB5;
+    padding: 10px 0;
+    margin-left: 100px;
 }
 
 .header-box > ul a {
@@ -48,6 +47,10 @@ body {
     color: #222;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.header-box > ul li:first-child a {
+    padding-left: 20px;
 }
 
 .header-box > ul a:hover {
@@ -412,6 +415,8 @@ body {
     }
     .header-box {
         margin-left: 0;
+        padding: 10px 0;
+        background: #FB5;
     }
 }
 
@@ -428,6 +433,12 @@ body {
     }
     .animais-img img {
         width: 90px;
+    }
+}
+
+@media(max-width: 450px) {
+    .animais h1 {
+        font-size: 2.4rem
     }
 }
 
@@ -465,10 +476,10 @@ body {
         font-size: 3rem
     }
 }
-
 @media(max-width: 550px) {
     .numeros-container {
         grid-template-columns: 1fr;
+        padding: 24px 50px;
     }
 }
 
