@@ -35,12 +35,12 @@
     color: #ffffff;
     display: block;
     position: absolute;
-    top: -40px;
-    right: -40px;
-    width: 42px;
+    top: -35px;
+    right: -35px;
+    width: 32px;
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: -1px 1px 6px #222;
     cursor: pointer;
 }
