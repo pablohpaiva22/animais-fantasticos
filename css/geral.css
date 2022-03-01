@@ -378,9 +378,6 @@ body {
     background-color: rgb(71, 204, 71);
 }
 
-/* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
-
-
 /* FOOTER */
 
 .footer {
@@ -402,9 +399,6 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
 }
-
-
-
 
 /* -------------- MEDIA ----------------- */
 
@@ -482,7 +476,6 @@ body {
         padding: 24px 50px;
     }
 }
-
 
 /* FOOTER */
 @media(max-width: 700px) {
