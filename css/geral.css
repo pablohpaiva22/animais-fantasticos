@@ -360,6 +360,14 @@ body {
     background: #FB5;
 }
 
+.bitcoinValor {
+    display: inline-block;
+    background-color: rgb(71, 204, 71);
+    line-height: 1;
+    font-weight: bold;
+    padding: 4px 6px;
+}
+
 /* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
 
 [data-semana]::after {
