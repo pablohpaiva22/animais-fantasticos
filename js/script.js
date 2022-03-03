@@ -8,6 +8,7 @@ import dropDown from "./funcoes/drop-down.js"
 import menuMobile from "./funcoes/menu-mobile.js"
 import animaNumeros from "./funcoes/anima-numeros.js"
 import horarioDeAtendimento from "./funcoes/atendimento.js"
+import animaisFetch from "./funcoes/animaisFetch.js"
 
 trocarTexto()
 accordionList()
@@ -19,3 +20,4 @@ dropDown()
 menuMobile()
 animaNumeros()
 horarioDeAtendimento()
+animaisFetch()
