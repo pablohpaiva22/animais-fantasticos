@@ -9,7 +9,7 @@ import menuMobile from "./funcoes/menu-mobile.js"
 import animaNumeros from "./funcoes/anima-numeros.js"
 import horarioDeAtendimento from "./funcoes/atendimento.js"
 import animaisFetch from "./funcoes/animaisFetch.js"
-import doeBitcoin from "./funcoes/bitcoin.js"
+import doeBitcoin from "./funcoes/bitcoinFetch.js"
 
 trocarTexto()
 accordionList()
