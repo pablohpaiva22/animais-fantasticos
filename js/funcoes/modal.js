@@ -1,20 +1,25 @@
 export default function modal() {
     const $sectionModal = document.querySelector('[data-modal="mostrar-modal"]')
     const $loginBtn = document.querySelector('[data-login]')
-    const $fecharX = document.querySelector('[data-modal-botao="fechar-modal"')
+    const $fecharX = document.querySelector('[data-modal-botao="fechar-modal"]')
 
     if($sectionModal && $loginBtn && $fecharX) {
-        $loginBtn.addEventListener('click', function(event) {
+
+        function handleClickLoginBtn(event) {
             event.preventDefault()
             $sectionModal.classList.add($sectionModal.dataset.modal)
-        })
+        }
 
-        $fecharX.addEventListener('click', function() {
+        function handleClickFecharX() {
             $sectionModal.classList.remove($sectionModal.dataset.modal)
-        })
+        }
 
-        $sectionModal.addEventListener('click', function(event) {
+        function handleClickSectionModal(event) {
             event.target.classList.remove($sectionModal.dataset.modal)
-        })
+        }
+
+        $loginBtn.addEventListener('click', handleClickLoginBtn)
+        $fecharX.addEventListener('click', handleClickFecharX)
+        $sectionModal.addEventListener('click', handleClickSectionModal)
     }
 }
