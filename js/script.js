@@ -1,6 +1,6 @@
 import trocarTexto from "./funcoes/trocar-texto.js"
 import accordionList from "./funcoes/accordion-list.js"
-import scrollSuave from "./funcoes/scroll-suave.js"
+import ScrollSuave from "./funcoes/ScrollSuave.js"
 import mostrarConteudo from "./funcoes/mostrar-conteudo.js"
 import modal from "./funcoes/modal.js"
 import tooltip from "./funcoes/tooltip.js"
@@ -13,7 +13,6 @@ import doeBitcoin from "./funcoes/bitcoinFetch.js"
 
 trocarTexto()
 accordionList()
-scrollSuave()
 mostrarConteudo()
 modal()
 tooltip()
@@ -23,3 +22,6 @@ animaNumeros()
 horarioDeAtendimento()
 animaisFetch()
 doeBitcoin()
+
+const scrollSuave = new ScrollSuave('[href^="#"]')
+scrollSuave.init()
