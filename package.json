@@ -1,0 +1,24 @@
+{
+  "name": "animais-fantasticos",
+  "version": "1.0.0",
+  "description": "Pagina criada para praticar e aplicar conteúdo que aprendi com JavaScript <img src=\"https://user-images.githubusercontent.com/89819079/157577203-b462c0b7-5283-4945-a96c-6d9c32ee6713.png\" width=\"32\" height=\"32\"></img>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablohpaiva22/animais-origamid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pablohpaiva22/animais-origamid/issues"
+  },
+  "homepage": "https://github.com/pablohpaiva22/animais-origamid#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
