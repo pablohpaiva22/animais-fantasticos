@@ -1,4 +1,4 @@
-import trocarTexto from "./components/trocar-texto.js";
+import TabNav from "./components/TabNav.js";
 import AccordionList from "./components/AccordionList.js";
 import ScrollSuave from "./components/ScrollSuave.js";
 import mostrarConteudo from "./components/mostrar-conteudo.js";
@@ -11,7 +11,6 @@ import horarioDeAtendimento from "./components/atendimento.js";
 import animaisFetch from "./components/animaisFetch.js";
 import doeBitcoin from "./components/bitcoinFetch.js";
 
-trocarTexto();
 mostrarConteudo();
 modal();
 tooltip();
@@ -27,3 +26,6 @@ scrollSuave.init();
 
 const accordionList = new AccordionList(".faq-content dt");
 accordionList.init();
+
+const tabNav = new TabNav(".animais-img img", ".animais-text");
+tabNav.init();
