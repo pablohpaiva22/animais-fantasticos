@@ -11,6 +11,7 @@
       "sourceType": "module"
   },
   "rules": {
-      "quotes": 0
+      "quotes": 0,
+      "import/extensions": 0
   }
 }

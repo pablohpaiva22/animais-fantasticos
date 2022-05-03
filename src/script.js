@@ -1,4 +1,4 @@
-import TabNav from "./components/TabNav.js";
+import TabNav from "./components/TabNav";
 import AccordionList from "./components/AccordionList.js";
 import ScrollSuave from "./components/ScrollSuave.js";
 import mostrarConteudo from "./components/mostrar-conteudo.js";
