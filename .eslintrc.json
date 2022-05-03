@@ -12,6 +12,7 @@
   },
   "rules": {
       "quotes": 0,
-      "import/extensions": 0
+      "import/extensions": 0,
+      "comma-dangle": 0
   }
 }

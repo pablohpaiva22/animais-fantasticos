@@ -1,25 +1,34 @@
-export default function modal() {
-    const $sectionModal = document.querySelector('[data-modal="mostrar-modal"]')
-    const $loginBtn = document.querySelector('[data-login]')
-    const $fecharX = document.querySelector('[data-modal-botao="fechar-modal"]')
+export default class Modal {
+  constructor(sectionModal, loginBtn, fecharX) {
+    this.$sectionModal = document.querySelector(sectionModal);
+    this.$loginBtn = document.querySelector(loginBtn);
+    this.$fecharX = document.querySelector(fecharX);
+  }
 
-    if($sectionModal && $loginBtn && $fecharX) {
+  handleClickLoginBtn(event) {
+    event.preventDefault();
+    this.$sectionModal.classList.add(this.$sectionModal.dataset.modal);
+  }
 
-        function handleClickLoginBtn(event) {
-            event.preventDefault()
-            $sectionModal.classList.add($sectionModal.dataset.modal)
-        }
+  handleClickFecharX() {
+    this.$sectionModal.classList.remove(this.$sectionModal.dataset.modal);
+  }
 
-        function handleClickFecharX() {
-            $sectionModal.classList.remove($sectionModal.dataset.modal)
-        }
+  handleClickSectionModal(event) {
+    event.target.classList.remove(this.$sectionModal.dataset.modal);
+  }
 
-        function handleClickSectionModal(event) {
-            event.target.classList.remove($sectionModal.dataset.modal)
-        }
+  addEvent() {
+    this.$loginBtn.addEventListener("click", (event) => {
+      this.handleClickLoginBtn(event);
+    });
+    this.$fecharX.addEventListener("click", () => this.handleClickFecharX());
+    this.$sectionModal.addEventListener("click", (event) => {
+      this.handleClickSectionModal(event);
+    });
+  }
 
-        $loginBtn.addEventListener('click', handleClickLoginBtn)
-        $fecharX.addEventListener('click', handleClickFecharX)
-        $sectionModal.addEventListener('click', handleClickSectionModal)
-    }
+  init() {
+    this.addEvent();
+  }
 }
