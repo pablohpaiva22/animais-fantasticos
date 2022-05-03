@@ -29,6 +29,8 @@ export default class Modal {
   }
 
   init() {
-    this.addEvent();
+    if (this.$sectionModal && this.$loginBtn && this.$fecharX) {
+      this.addEvent();
+    }
   }
 }
