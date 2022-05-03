@@ -3,6 +3,8 @@ export default class Modal {
     this.$sectionModal = document.querySelector(sectionModal);
     this.$loginBtn = document.querySelector(loginBtn);
     this.$fecharX = document.querySelector(fecharX);
+
+    this.handleClickFecharX = this.handleClickFecharX.bind(this);
   }
 
   handleClickLoginBtn(event) {
@@ -22,7 +24,7 @@ export default class Modal {
     this.$loginBtn.addEventListener("click", (event) => {
       this.handleClickLoginBtn(event);
     });
-    this.$fecharX.addEventListener("click", () => this.handleClickFecharX());
+    this.$fecharX.addEventListener("click", this.handleClickFecharX);
     this.$sectionModal.addEventListener("click", (event) => {
       this.handleClickSectionModal(event);
     });
