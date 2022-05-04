@@ -3,7 +3,6 @@ import AccordionList from "./components/AccordionList.js";
 import ScrollSuave from "./components/ScrollSuave.js";
 import mostrarConteudo from "./components/mostrar-conteudo.js";
 import Modal from "./components/Modal.js";
-import tooltip from "./components/tooltip.js";
 import dropDown from "./components/drop-down.js";
 import menuMobile from "./components/menu-mobile.js";
 import animaNumeros from "./components/anima-numeros.js";
@@ -12,7 +11,6 @@ import animaisFetch from "./components/animaisFetch.js";
 import doeBitcoin from "./components/bitcoinFetch.js";
 
 mostrarConteudo();
-tooltip();
 dropDown();
 menuMobile();
 animaNumeros();
