@@ -1,19 +1,45 @@
-export default function animaisFetch() {
-  const container = document.querySelector(".numeros-container");
+// export default function animaisFetch() {
+//   const container = document.querySelector(".numeros-container");
 
-  async function fetchData(url) {
+//   async function fetchData(url) {
+//     const data = await fetch(url);
+//     const dataJSON = await data.json();
+//     dataJSON.forEach((animal) => {
+//       this.newElement(animal);
+//     });
+//   }
+
+//   fetchData("../src/data.json");
+
+//   function newElement(animal) {
+//     const createDiv = document.createElement("div");
+//     const div = container.appendChild(createDiv);
+//     div.innerHTML = `<div class="numeros-content"><h3>${animal.especie}
+// </h3><span>${animal.quantidade}</span></div>`;
+//   }
+// }
+
+export default class AnimaisFetch {
+  constructor(container, data) {
+    this.container = document.querySelector(container);
+    this.data = data;
+  }
+
+  async fetchData(url) {
     const data = await fetch(url);
     const dataJSON = await data.json();
     dataJSON.forEach((animal) => {
-      newElement(animal);
+      this.newElement(animal);
     });
   }
 
-  fetchData("../src/data.json");
+  init() {
+    this.fetchData(this.data);
+  }
 
-  function newElement(animal) {
+  newElement(animal) {
     const createDiv = document.createElement("div");
-    const div = container.appendChild(createDiv);
+    const div = this.container.appendChild(createDiv);
     div.innerHTML = `<div class="numeros-content"><h3>${animal.especie}</h3><span>${animal.quantidade}</span></div>`;
   }
 }

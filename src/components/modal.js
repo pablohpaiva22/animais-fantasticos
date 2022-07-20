@@ -34,5 +34,6 @@ export default class Modal {
     if (this.$sectionModal && this.$loginBtn && this.$fecharX) {
       this.addEvent();
     }
+    return this;
   }
 }

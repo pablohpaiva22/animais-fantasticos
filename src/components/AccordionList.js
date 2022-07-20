@@ -17,5 +17,6 @@ export default class AccordionList {
     if (this.list.length) {
       this.addEvent();
     }
+    return this;
   }
 }

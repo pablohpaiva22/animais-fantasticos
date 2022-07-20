@@ -1,20 +1,22 @@
 import TabNav from "./components/TabNav.js";
 import AccordionList from "./components/AccordionList.js";
 import ScrollSuave from "./components/ScrollSuave.js";
-import mostrarConteudo from "./components/mostrar-conteudo.js";
+import MostrarConteudo from "./components/MostrarConteudo.js";
 import Modal from "./components/Modal.js";
-import DropDown from "./components/drop-down.js";
-import menuMobile from "./components/menu-mobile.js";
-import animaNumeros from "./components/anima-numeros.js";
-import horarioDeAtendimento from "./components/atendimento.js";
-import animaisFetch from "./components/animaisFetch.js";
+import DropDown from "./components/DropDown.js";
+import MenuMobile from "./components/MenuMobile.js";
+import HorarioDeAtendimento from "./components/atendimento.js";
 import DoeBiton from "./components/bitcoinFetch.js";
+import AnimaisFetch from "./components/animaisFetch";
+import animaNumeros from "./components/anima-numeros";
 
-mostrarConteudo();
-menuMobile();
 animaNumeros();
-horarioDeAtendimento();
-animaisFetch();
+
+const horarioDeAtendimento = new HorarioDeAtendimento("[data-semana]");
+horarioDeAtendimento.init();
+
+const animaisFetch = new AnimaisFetch(".numeros-container", "../src/data.json");
+animaisFetch.init();
 
 const scrollSuave = new ScrollSuave('[href^="#"]');
 scrollSuave.init();
@@ -35,5 +37,18 @@ const modal = new Modal(
 );
 modal.init();
 
-const drowDown = new DropDown('[data-drop-down="dropDown"]', ".card-dropDown");
+const drowDown = new DropDown(
+  '[data-drop-down="dropDown"] a',
+  ".card-dropDown"
+);
 drowDown.init();
+
+const mostrarConteudo = new MostrarConteudo(".scroll");
+mostrarConteudo.init();
+
+const menuMobile = new MenuMobile(
+  ".mobile-button",
+  ".menu-mobile ul",
+  ".sobre a"
+);
+menuMobile.init();

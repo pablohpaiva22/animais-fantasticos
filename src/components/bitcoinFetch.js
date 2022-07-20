@@ -24,5 +24,6 @@ export default class DoeBiton {
 
   init() {
     this.bitcoinFetch(this.url);
+    return this;
   }
 }
