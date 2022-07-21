@@ -60,7 +60,7 @@ export default class HorarioDeAtendimento {
     const dataAcesso = this.dataAcesso();
 
     if (horaAcesso && dataAcesso) {
-      this.atendimento.classList.add("aberto");
+      this.diasAtendimento.classList.add("aberto");
     }
   }
 }
