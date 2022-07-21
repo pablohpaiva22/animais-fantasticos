@@ -1,493 +1,490 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: none;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-    position: relative;
+  position: relative;
 }
 
 body {
-    background: #faf6ed;
+  background: #faf6ed;
 }
 
 /* HEADER */
 
 .header {
-    margin-top: 30px;
-    background: linear-gradient(to right, #faf6ed 40%, #fb5 0);
+  margin-top: 30px;
+  background: #fb5 0;
 }
 
 .header-box {
-    max-width: 900px;
-    position: relative;
-    margin: 0 auto;
-    flex-wrap: wrap;
+  max-width: 900px;
+  position: relative;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .header-box > ul {
-    display: flex;
-    gap: 10px;
-    background: #FB5;
-    padding: 10px 0;
-    margin-left: 100px;
+  display: flex;
+  gap: 10px;
+  background: #fb5;
+  padding: 10px 0;
 }
 
 .header-box > ul a {
-    display: inline-block;
-    padding: 10px;
-    font: 700 0.875rem/1 'IBM Plex Mono', monospace;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: #222;
-    text-transform: uppercase;
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font: 700 0.875rem/1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .header-box > ul li:first-child a {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .header-box > ul a:hover {
-    color: rgb(94, 94, 94);
+  color: rgb(94, 94, 94);
 }
 
 .header-box [data-login] a::after {
-    content: "➜";
-    margin-left: 6px;
-    width: 16px;
-    height: inherit;
-    display: inline-block;
-    cursor: pointer;
+  content: "➜";
+  margin-left: 6px;
+  width: 16px;
+  height: inherit;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .header-box li:last-child a:hover:after {
-    transform: translateX(6px);
-    transition: 200ms;
+  transform: translateX(6px);
+  transition: 200ms;
 }
 
 /* ANIMAIS */
 
 .animais {
-    max-width: 900px;
-    margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 20px;
 }
 
 .animais h1 {
-    font: 400 6rem/1 'Playfair Display SC', serif;
-    padding: 10px;
+  font: 400 6rem/1 "Playfair Display SC", serif;
+  padding: 10px;
 }
 
 .animais-grid {
-    margin-left: 100px;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: max-content 1fr;
+  margin-left: 100px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
-.animais-img  {
-    height: 380px;
-    margin: 10px;
-    overflow: hidden;
-    overflow-y: auto;
-    width: 290px;
+.animais-img {
+  height: 380px;
+  margin: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 290px;
 }
 
 .animais-img::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 
 .animais-img::-webkit-scrollbar-track {
-    background: #faf6ed;
+  background: #faf6ed;
 }
 
 .animais-img::-webkit-scrollbar-thumb {
-    background: #FB5;
-    border-left: 4px solid #faf6ed;
+  background: #fb5;
+  border-left: 4px solid #faf6ed;
 }
 
 .animais-img img {
-    width: 290px;
+  width: 290px;
 }
 
 .animais-content {
-    margin: 10px;
+  margin: 10px;
 }
 
 .animais-text {
-    display: none;
+  display: none;
 }
 
 .animais-text.ativo.show-Down {
-    animation: show-down 1s;
-    display: block;
+  animation: show-down 1s;
+  display: block;
 }
 
 .animais-text.ativo.show-Right {
-    animation: show-right 1s;
-    display: block;
+  animation: show-right 1s;
+  display: block;
 }
 
 .animais-content h2 {
-    padding-bottom: 12px;
-    color: #e54;
-    font: 700 1rem/1 'IBM Plex Mono', monospace;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    display: flex;
-    align-items: center;
+  padding-bottom: 12px;
+  color: #e54;
+  font: 700 1rem/1 "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
 }
 
 .animais-content h2::before {
-    content: "";
-    background: #FB5;
-    margin-right: 12px;
-    width: 36px;
-    height: 8px;
-    display: inline-block;
+  content: "";
+  background: #fb5;
+  margin-right: 12px;
+  width: 36px;
+  height: 8px;
+  display: inline-block;
 }
 
 .animais-content p {
-    font: 400 1rem/1.2 Helvetica , Arial;
-    padding-bottom: 12px;
+  font: 400 1rem/1.2 Helvetica, Arial;
+  padding-bottom: 12px;
 }
 
 @keyframes show-right {
-    from {
-        opacity: 0;
-        transform: translateX(-15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes show-down {
-    from {
-        opacity: 0;
-        transform: translateY(-15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* fAQ */
 
 .faq {
-    max-width: 900px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: 400ms;
-    transform: translateX(-12px);
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 400ms;
+  transform: translateX(-12px);
 }
 
 .faq.ativo {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .faq h1 {
-    font-family:'Playfair Display SC', serif;
-    font-size: 6rem;
-    font-weight: 400;
-    padding: 10px;
-    padding-bottom: 40px;
+  font-family: "Playfair Display SC", serif;
+  font-size: 6rem;
+  font-weight: 400;
+  padding: 10px;
+  padding-bottom: 40px;
 }
 
 .faq-content {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .faq-content dl {
-    font-family: 'Helvetica', Arial;
-    margin-bottom: 24px;
+  font-family: "Helvetica", Arial;
+  margin-bottom: 24px;
 }
 .faq-content dt {
-    color: #e54;
-    font-weight: bold;
-    font-family: 'IBM Plex Mono', monospace;
-    line-height: 2;
-    margin-bottom: 8px;
-    cursor: pointer;
+  color: #e54;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 2;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 
-.faq-content dt::before{
-    content: "";
-    display: inline-block;
-    margin-right: 12px;
-    width: 20px;
-    height: 10px;
-    background: #FB5;
+.faq-content dt::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 10px;
+  background: #fb5;
 }
 
 .faq-content dd {
-    margin-left: 30px;
-    display: none;
-    animation: accordion-list 200ms;
+  margin-left: 30px;
+  display: none;
+  animation: accordion-list 200ms;
 }
 
 .faq-content dd.ativo {
-    display: block;
+  display: block;
 }
 
 @keyframes accordion-list {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* NUMEROS */
 
 .numeros {
-    max-width: 900px;
-    opacity: 0;
-    margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 20px;
-    opacity: 0;
-    transition: 400ms;
-    transform: translateX(-12px);
+  max-width: 900px;
+  opacity: 0;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  opacity: 0;
+  transition: 400ms;
+  transform: translateX(-12px);
 }
 
 .numeros.ativo {
-    opacity: 1;
-    transform: translateX(0);
-
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .numeros h1 {
-    font: 400 6rem/1 'Playfair Display SC', serif;
-    padding: 10px;
+  font: 400 6rem/1 "Playfair Display SC", serif;
+  padding: 10px;
 }
 
 .numeros-container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    padding: 24px 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  padding: 24px 100px;
 }
 
 .numeros-content h3 {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #222;
-    padding: 16px;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+  padding: 16px;
 }
 
 .numeros-content span {
-    font-family: 'IBM Plex Mono', monospace;
-    display: block;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: #E54;
-    padding: 0 16px;
+  font-family: "IBM Plex Mono", monospace;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e54;
+  padding: 0 16px;
 }
-
 
 /* CONTATO */
 
 .contato {
-    max-width: 900px;
-    margin: 0 auto;
-    opacity: 0;
-    transition: 400ms;
-    transform: translateX(-12px)
+  max-width: 900px;
+  margin: 0 auto;
+  opacity: 0;
+  transition: 400ms;
+  transform: translateX(-12px);
 }
 
 .contato.ativo {
-    opacity: 1;
-    transform: translateX(0)
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contato h1 {
-    font-family:'Playfair Display SC', serif;
-    font-size: 6rem;
-    font-weight: 400;
-    padding: 10px;
-    padding-bottom: 40px;
+  font-family: "Playfair Display SC", serif;
+  font-size: 6rem;
+  font-weight: 400;
+  padding: 10px;
+  padding-bottom: 40px;
 }
 
 .contato-grid {
-    margin-left: 100px;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: max-content 1fr;
+  margin-left: 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: max-content 1fr;
 }
 
 .contato-img img {
-    width: 290px;
-    height: 380px;
+  width: 290px;
+  height: 380px;
 }
 
 .contato-content li,
 .contato-content li a {
-    margin-bottom: 4px;
-    color: #222;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2;
-    text-decoration: none;
+  margin-bottom: 4px;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  text-decoration: none;
 }
 
 .contato-content li a {
-    display: inline-block;
+  display: inline-block;
 }
 
 .contato-content li a:hover {
-    color: rgb(94, 94, 94);
+  color: rgb(94, 94, 94);
 }
 
 .contato-content li::before {
-    content: "";
-    display: inline-block;
-    margin-right: 12px;
-    width: 20px;
-    height: 10px;
-    background: #FB5;
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 10px;
+  background: #fb5;
 }
 
 .bitcoinValor {
-    display: inline-block;
-    background-color: rgb(71, 204, 71);
-    line-height: 1;
-    font-weight: bold;
-    padding: 4px 6px;
+  display: inline-block;
+  background-color: rgb(71, 204, 71);
+  line-height: 1;
+  font-weight: bold;
+  padding: 4px 6px;
 }
 
 /* SCRIPT ICONE VERDE OU VERMELHO - ABERTO OU FECHADO */
 
 [data-semana]::after {
-    content: "";
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: rgb(238, 4, 4);
-    border: 1px solid #000;
-    margin-left: 8px;
-    margin-bottom: 1px;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(238, 4, 4);
+  border: 1px solid #000;
+  margin-left: 8px;
+  margin-bottom: 1px;
 }
 
 [data-semana].aberto::after {
-    background-color: rgb(71, 204, 71);
+  background-color: rgb(71, 204, 71);
 }
 
 /* FOOTER */
 
 .footer {
-    background: linear-gradient(to right, #faf6ed 30%, #FB5 0);
-    margin-bottom: 30px;
+  background: #fb5 0;
+  margin-bottom: 30px;
 }
 
 .footer-content {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .footer p {
-    padding: 20px;
-    margin-top: 60px;
-    margin-left: 100px;
-    background: #FB5;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: bold;
-    font-size: 0.9rem;
+  padding: 20px;
+  margin-top: 60px;
+  margin-left: 100px;
+  background: #fb5;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* -------------- MEDIA ----------------- */
 
 /* HEADER */
-@media(max-width: 700px) {
-    .header {
-        margin-top: 0;
-    }
-    .header-box {
-        margin-left: 0;
-        padding: 10px 0;
-        background: #FB5;
-    }
+@media (max-width: 700px) {
+  .header {
+    margin-top: 0;
+  }
+  .header-box {
+    margin-left: 0;
+    padding: 10px 0;
+    background: #fb5;
+  }
 }
 
 /* ANIMAIS */
-@media(max-width: 700px) {
-    .animais h1 {
-        font-size: 3rem
-    }
-    .animais-grid {
-        margin-left: 0;
-    }
-    .animais-img  {
-        width: 90px;
-    }
-    .animais-img img {
-        width: 90px;
-    }
+@media (max-width: 700px) {
+  .animais h1 {
+    font-size: 3rem;
+  }
+  .animais-grid {
+    margin-left: 0;
+  }
+  .animais-img {
+    width: 90px;
+  }
+  .animais-img img {
+    width: 90px;
+  }
 }
 
-@media(max-width: 450px) {
-    .animais h1 {
-        font-size: 2.4rem
-    }
+@media (max-width: 450px) {
+  .animais h1 {
+    font-size: 2.4rem;
+  }
 }
 
 /* FAQ */
-@media(max-width: 700px) {
-    .faq h1 {
-        font-size: 3rem
-    }
-    .faq-content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+@media (max-width: 700px) {
+  .faq h1 {
+    font-size: 3rem;
+  }
+  .faq-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* CONTATO */
-@media(max-width: 700px) {
-    .contato h1 {
-        font-size: 3rem;
-    }
-    .contato-grid {
-        grid-template-columns: 1fr;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .contato-img img {
-        width: 100%;
-        height: auto;
-    }
+@media (max-width: 700px) {
+  .contato h1 {
+    font-size: 3rem;
+  }
+  .contato-grid {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contato-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* NUMEROS */
 
-@media(max-width: 700px) {
-    .numeros h1 {
-        font-size: 3rem
-    }
+@media (max-width: 700px) {
+  .numeros h1 {
+    font-size: 3rem;
+  }
 }
-@media(max-width: 550px) {
-    .numeros-container {
-        grid-template-columns: 1fr;
-        padding: 24px 50px;
-    }
+@media (max-width: 550px) {
+  .numeros-container {
+    grid-template-columns: 1fr;
+    padding: 24px 50px;
+  }
 }
 
 /* FOOTER */
-@media(max-width: 700px) {
-    .footer p {
-        margin-left: 0;
-    }
+@media (max-width: 700px) {
+  .footer p {
+    margin-left: 0;
+  }
 }
