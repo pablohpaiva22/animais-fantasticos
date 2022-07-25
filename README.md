@@ -6,8 +6,6 @@ Projeto final do curso de JavaScript da Origamid. <img src="https://user-images.
 
 ## Sobre  <img src="https://user-images.githubusercontent.com/89819079/157577783-18b942f4-3634-4e92-ae6b-cc77098060a5.png" width="45" height="45"></img>
 
-
-Projeto criado no curso de JavaScript ES6+ da plataforma [ORIGAMID](https://www.origamid.com/)
 * Functions
 * Eventos e Loops
 * Constructors
